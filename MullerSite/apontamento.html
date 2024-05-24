@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Produção</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #061D2E;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    
+   
+}
+
+.left-section {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-section {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.suporte {
+    font-size: 1.2em;
+    color: #ffffff66;
+}
+
+.responsavel {
+    font-size: 1.2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #2a3a52;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    background-color: #2a3a52;
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 90%;
+    max-height: 90%;
+
+}
+
+
+.apontamento a {
+    color: #ffffff;
+    background-color: #2a3a52;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+
+.hora-hora {
+    text-align: center;
+}
+
+.hora-hora label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.hora-hora select {
+    padding: 5px;
+    font-size: 1em;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ffffff;
+    position: fixed;
+    bottom: 0;
+    background-color: #061D2E;
+}
+
+    </style>
+    <script>
+        document.getElementById('turno-select').addEventListener('change', function() {
+    let turno = this.value;
+    alert('Selected Turno: ' + turno); 
+});
+
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <header>
+                <h1>MullerSolutions</h1>
+                <a href="#" class="suporte">Suporte</a>
+            </header>
+         
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="8">1º Turno
+                        Responsável: Fabio</th>
+                    </tr>
+                    <tr>
+                        <th>Linha</th>
+                        <th>Identificação</th>
+                        <th>Código</th>
+                        <th>Produção</th>
+                        <th>Hora</th>
+                        <th>Quantidades boas</th>
+                        <th>Refugo</th>
+                        <th>Motivo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LUC1</td>
+                        <td>L-1005-0005</td>
+                        <td>159920</td>
+                        <td>Produção</td>
+                        <td>6:10<br>14:10</td>
+                        <td>1400</td>
+                        <td>20</td>
+                        <td>3048</td>
+                    </tr>
+                    <tr>
+                        <td>LUC2</td>
+                        <td>L-1005-0005</td>
+                        <td>159920</td>
+                        <td>Produção</td>
+                        <td>6:10<br>14:10</td>
+                        <td>1400</td>
+                        <td>20</td>
+                        <td>3048</td>
+                    </tr>
+                    <tr>
+                        <td>LUC3</td>
+                        <td>L-1005-0005</td>
+                        <td>159920</td>
+                        <td>Produção</td>
+                        <td>6:10<br>14:10</td>
+                        <td>1400</td>
+                        <td>20</td>
+                        <td>3048</td>
+                    </tr>
+                </tbody>
+
+            
+                
+
+                <!-- 2 turno-->
+
+                <thead>
+                    <tr>
+                        <th colspan="8">2º Turno Responsável: Nathan</th>
+                    </tr>
+                    <tr>
+                        <th>Linha</th>
+                        <th>Identificação</th>
+                        <th>Código</th>
+                        <th>Produção</th>
+                        <th>Hora</th>
+                        <th>Quantidades boas</th>
+                        <th>Refugo</th>
+                        <th>Motivo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LUC1</td>
+                        <td>L-1005-0005</td>
+                        <td>159920</td>
+                        <td>Produção</td>
+                        <td>6:10<br>14:10</td>
+                        <td>1400</td>
+                        <td>20</td>
+                        <td>3048</td>
+                    </tr>
+                    <tr>
+                        <td>LUC2</td>
+                        <td>L-1005-0005</td>
+                        <td>159920</td>
+                        <td>Produção</td>
+                        <td>6:10<br>14:10</td>
+                        <td>1400</td>
+                        <td>20</td>
+                        <td>3048</td>
+                    </tr>
+                    <tr>
+                        <td>LUC3</td>
+                        <td>L-1005-0005</td>
+                        <td>159920</td>
+                        <td>Produção</td>
+                        <td>6:10<br>14:10</td>
+                        <td>1400</td>
+                        <td>20</td>
+                        <td>3048</td>
+                    </tr>
+                </tbody>
+
+                <!-- 3 turno-->
+
+                <thead>
+                    <tr>
+                        <th colspan="8">3º Turno Responsável: Vitor</th>
+                    </tr>
+                    <tr>
+                        <th>Linha</th>
+                        <th>Identificação</th>
+                        <th>Código</th>
+                        <th>Produção</th>
+                        <th>Hora</th>
+                        <th>Quantidades boas</th>
+                        <th>Refugo</th>
+                        <th>Motivo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LUC1</td>
+                        <td>L-1005-0005</td>
+                        <td>159920</td>
+                        <td>Produção</td>
+                        <td>6:10<br>14:10</td>
+                        <td>1400</td>
+                        <td>20</td>
+                        <td>3048</td>
+                    </tr>
+                    <tr>
+                        <td>LUC2</td>
+                        <td>L-1005-0005</td>
+                        <td>159920</td>
+                        <td>Produção</td>
+                        <td>6:10<br>14:10</td>
+                        <td>1400</td>
+                        <td>20</td>
+                        <td>3048</td>
+                    </tr>
+                    <tr>
+                        <td>LUC3</td>
+                        <td>L-1005-0005</td>
+                        <td>159920</td>
+                        <td>Produção</td>
+                        <td>6:10<br>14:10</td>
+                        <td>1400</td>
+                        <td>20</td>
+                        <td>3048</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+        <div class="right-section">
+            <div class="logo-container">
+                <a href="#"><img src="Imagem/Captura de tela 2024-05-22 141959.png" alt="Logo da Empresa" class="logo"></a>
+            </div>
+
+          
+            <div class="apontamento">
+                <a href="inicio.html">MullerSolutions</a>
+            </div>
+            
+        
+        </div>
+    </div>
+    <footer>
+        <p>©2024 All Rights Reserved TechVision</p>
+    </footer>
+    
+</body>
+</html>
