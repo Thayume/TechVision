@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados Apontamento</title>
+    <title>Login</title>
     <style>
         body {
     margin: 0;
@@ -17,9 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    padding: 20px;
-    box-sizing: border-box;
+    height: 100vh;
 }
 
 header {
@@ -36,8 +34,8 @@ form {
     
     padding: 20px;
     border-radius: 10px;
+    
     width: 500px;
-    max-width: 550px;
 }
 
 h2 {
@@ -56,13 +54,9 @@ input, select {
     border: none;
     border-radius: 5px;
     background-color: #3a4b6d;
-    color: #5a6e73;
+    color: #ffffff;
 }
 
-input[type="date"],
-input[type="time"] {
-    background-color: #3a4b6d;
-}
 
 .checkbox {
     display: flex;
@@ -81,18 +75,18 @@ input[type="time"] {
     text-align: center;
     text-decoration: none;
     background-color: #5a6e73;
-    color: #1c273b;
+    color: #ffffff;
     border-radius: 5px;
 }
+
 .btn-confirmar:hover {
-    background-color: #788d92;
-}
+            background-color: #788d92;
+        }
 
     footer {
         text-align: center;
         padding: 10px 0;
         background-color: #061D2E;
-        margin-top: 20px;
     }
 
     </style>
@@ -112,38 +106,25 @@ input[type="time"] {
         </header>
         <form>
             <h2>LUC1</h2>
+        
             <div class="form-group">
-                <input type="text" id="numero-peca" name="numero-peca" placeholder="Número da Peça">
+                <input type="text" id="ordem-producao" name="ordem-producao" placeholder="Chapa">
             </div>
-            <div class="form-group">
-                <input type="text" id="ordem-producao" name="ordem-producao" placeholder="Ordem de produção">
-            </div>
-            
-            <div class="form-group">
-                <input type="number" id="quantidade-pecas" name="quantidade-pecas" placeholder="Quantidade de Peças">
-            </div>
-            <div class="form-group">
-                <input type="number" id="quantidade-refugo" name="quantidade-refugo" placeholder="Quantidade de Refugo">
-                <input type="text" id="motivo" name="motivo" placeholder="Motivo">
-            </div>
-            <div class="form-group">
-                <input type="date" id="data" name="data">
-            </div>
-            <div class="form-group">
-                <input type="time" id="horario-inicial" name="horario-inicial" placeholder="Horário Inicial">
-                <input type="time" id="horario-final" name="horario-final" placeholder="Horário Final">
-            </div>
+       
             <div class="form-group">
                 <select id="status-maquina" name="status-maquina">
-                    <option value="" disabled selected>Status da máquina</option>
+                    <option value="" disabled selected>Selecione a máquina</option>
                     <option value="1">Primeira</option>
                     <option value="2">Segunda</option>
                     <option value="3">Terceira</option>
                 </select>
             </div>
-        
+            <div class="form-group checkbox">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
             <div class="form-group">
-                <a href="index.html" class="btn-confirmar">Confirmar</a>
+                <a href="tabela.html" class="btn-confirmar">Login</a>
             </div>
         </form>
     </div>
